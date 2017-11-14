@@ -20,5 +20,13 @@ class Usuario extends Model
     	return $this->belongsTo('App\Carrera');
     }
 
+    public function alumno() {
+    	return $this->hasMany('App\Ayudantia', 'id_alumno');
+    }
+
+    public function profesor() {
+    	return $this->hasMany('App\Ayudantia', 'id_profesor');
+    }
+
     public $timestamps = false;
 }
