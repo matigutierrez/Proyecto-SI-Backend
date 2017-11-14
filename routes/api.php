@@ -22,3 +22,7 @@ Route::apiResource('carrera', 'CarreraController');
 Route::apiResource('rol', 'RolController');
 
 Route::apiResource('usuario', 'UsuarioController');
+
+Route::apiResource('asignatura', 'AsignaturaController');
+
+Route::apiResource('ayudantia', 'AyudantiaController');
